@@ -1,2 +1,4 @@
-# nextstep-docs
-nextstep 매뉴얼 및 문서를 관리하는 저장소
+# NextStep
+
+---
+## [NextStep의 온라인 코드 리뷰 과정](./codereview/README.md)
