@@ -2,11 +2,16 @@
 코드리뷰 1단계는 미션을 시작, 개발 환경을 구축, 1단계 미션 오나료, 1차 리뷰 요청을 보내는 단계까지의 과정을 다룬다.
 
 ---
-1. 저장소 브랜치에 자신의 github 아이디에 해당하는 브랜치가 있는지 확인한다. 브랜치가 없는 경우 관리자에게 브랜치 생성을 요청한다.
+1. 저장소 브랜치에 자신의 github 아이디에 해당하는 브랜치가 있는지 확인한다. 브랜치가 없는 경우 강사에게 브랜치 생성을 요청한다.
 
-![codereview 1_1](codereview_1_1.png)
+브랜치를 생성하기 전 상태는 다음과 같다.
+![no branch](./images/no_branch.png)
 
-![codereview 1_2](codereview_1_2.png)
+자신의 브랜치가 존재하는지 확인하는 방법은 다음과 같다.
+![branches](./images/branches.png)
+
+브랜치를 생성한 후 상태는 다음과 같다.
+![create branch](./images/create_branch.png)
 
 ---
 2. 프로젝트를 자신의 계정으로 fork한다. 저장소 우측 상단의 fork 버튼을 활용한다.
@@ -14,7 +19,11 @@
 > 
 > fork는 next-step의 저장소를 자신의 계정으로 복사하는 기능이다. 앞으로 모든 미션은 자신의 계정 아래에 있는 저장소를 활용해 진행한다.
 
-![codereview 2](codereview_2.png)
+fork는 next-step 저장소 우측 상단의 fork 버튼을 활용한다.
+![fork](./images/fork.png)
+
+fork를 완료한 후의 상태는 다음과 같다.
+![fork my repo](./images/fork_my_repo.png)
 
 ---
 3. fork한 저장소를 자신의 컴퓨터로 clone한 후 디렉토리로 이동한다.
@@ -22,16 +31,20 @@
 >
 > clone 명령은 github.com에 존재하는 저장소를 자신의 노트북 또는 PC로 복사하는 과정이다.
 
+터미널에서 다음 명령을 입력한다.
+
 ```
 git clone -b {본인_아이디} --single-branch https://github.com/{본인_아이디}/{저장소 아이디}
 ex) git clone -b javajigi --single-branch https://github.com/javajigi/java-racingcar
 ```
 ```
+// clone한 폴더로 이동하는 방법
 cd {저장소 아이디}
 ex) cd java-racingcar
 ```
 
-![codereview 3](codereview_3.png)
+clone을 완료한 후의 상태는 다음과 같다.
+![clone repository](./images/clone_repository.png)
 
 ---
 4. 기능 구현을 위한 브랜치 생성
@@ -39,20 +52,27 @@ ex) cd java-racingcar
 >
 > 브랜치를 생성하는 이유는 실무에서 프로젝트를 진행할 때와 같은 방법으로 기능을 구현하고, 리뷰하는 경험을 전달하기 위함이다.
 
+터미널에서 다음 명령을 입력해 브랜치를 생성한다.
+
 ```
 git checkout -b 브랜치이름
 ex) git checkout -b step1
 ```
 
-![codereview 4](codereview_4.png)
+브랜치를 생성한 후의 상태는 다음과 같다.
+![checkout step1](./images/checkout_step1.png)
 
 ---
 5. 통합개발도구(Eclipse 또는 IntelliJ)로 가져오기(import)
-> 미션 진행을 위해 자신이 사용하고 있는 통합개발도구로 가져오기 한다.
+> 미션 진행을 위해 자신이 사용하고 있는 통합개발도구로 가져오기 한다. 이 문서는 IntelliJ를 기준으로 한다.
+
+![import1](./images/import1.png)
+
+![import2](./images/import2.png)
 
 ---
 6. 기능 구현
-> [Next Step](https://edu.nextstep.camp/)에서 미션 요구사항을 파악해 기능을 구현한다.
+> [edu.nextstep.camp](https://edu.nextstep.camp)에서 미션 요구사항을 파악해 기능을 구현한다.
 
 ---
 7. 기능 구현 후 add, commit
@@ -64,9 +84,10 @@ git add -A(또는 .) // 변경된 전체 파일을 한번에 반영
 git commit -m "메시지" // 작업한 내용을 메시지에 기록
 ```
 
-![codereview 5](codereview_5.png)
+기능 구현을 완료하고 add, commit 명령을 실행한 후의 상태는 다음과 같다.
+![add commit1](./images/add_commit_1.png)
 
-----
+---
 8. 본인 원격 저장소에 올리기
 > 로컬에서 commit 명령을 실행하면 로컬 저장소에만 반영되고, 원격 github.com의 저장소에는 반영되지 않는다.
 
@@ -75,14 +96,5 @@ git push origin 브랜치이름
 ex) git push origin step1
 ```
 
-![codereview 6](codereview_6.png)
-
-----
-9.  github 서비스에서 pull request를 보낸다.
-> pull request는 original 저장소(next-step 계정)의 브랜치(자신의 github 아이디)와 앞 단계에서 생성한 브랜치 이름을 기준으로 한다.
-
-```
-ex) next-step/java-racingcar javajigi 브랜치 기준 => javajigi/java-racingcar step1
-```
-
-![codereview 7](codereview_7.png)
+push 명령을 실행한 후의 상태는 다음과 같다.
+![push1](./images/push1.png)

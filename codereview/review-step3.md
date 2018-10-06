@@ -1,13 +1,12 @@
-## 온라인 코드리뷰 3단계
-코드리뷰 3단계는 리뷰 요청을 보낸 후 pull request가 next-step으로 merge가 된 이후의 과정을 다룬다.
+## 온라인 코드리뷰 요청 3단계
+코드리뷰 3단계는 리뷰 요청을 보낸 후 pull request가 next-step으로 통합(merge)된 이후의 과정을 다룬다.
 
 ---
-1. 리뷰어는 피드백을 마무리하고 next-step 저장소로 merge한다.
+1. merge를 완료했다는 통보를 받으면 브랜치 변경 및 작업 브랜치 삭제(option)한다.
+> 강사에게 승인 후 merge를 완료했다는 통보를 받으면 해당 미션은 완료한 상태가 된다.
+>
+> 현재 미션을 완료했기 때문에 미션을 진행한 브랜치를 삭제하고 다음 미션을 위한 새로운 브랜치를 생성해야 한다.
 
-![codereview 8](codereview_8.png)
-
-----
-9. merge를 완료했다는 통보를 받으면 브랜치 변경 및 작업 브랜치 삭제(option)한다.
 ```
 git checkout 본인_아이디
 git branch -D 삭제할_브랜치이름
@@ -15,10 +14,14 @@ ex) git checkout javajigi
 ex) git branch -D step1
 ```
 
-![codereview 9](codereview_9.png)
+checkout을 통해 브랜치를 변경한 후 작업 브랜치를 삭제한 후의 상태는 다음과 같다.
+![checkout delete](./images/checkout_delete.png)
 
-----
-10. merge한 next-step 저장소와 동기화하기 위해 next-step 저장소 추가(최초 한번만)
+---
+2. 통합(merge)한 next-step 저장소와 동기화하기 위해 next-step 저장소 추가(최초 한번만)
+> 계정 브랜치에서 다음 미션을 이어서 진행하기 위해 브랜치를 생성하려고 한다. 
+>
+> 그런데 로컬 PC의 현재 상태는 최신 코드가 아니기 때문에 미션을 이어서 진행할 수 없다. 따라서 **next-step에 통합(merge)된 코드와 동기화하는 작업을 진행**해야 한다.
 
 ```
 git remote add {저장소_별칭} base_저장소_url
@@ -27,26 +30,54 @@ ex) git remote add upstream https://github.com/next-step/java-racingcar.git
 git remote -v
 ```
 
-----
-11. next-step 저장소에서 자기 브랜치 가져오기(또는 갱신하기)
+![add upstream](./images/add_upstream.png)
+
+---
+3. next-step 저장소에서 자기 브랜치 가져오기(또는 갱신하기)
+> 앞 단계의 `remote add` 명령은 로컬 PC에서 next-step 저장소에 접근할 수 있도록 이름을 부여한 것이다. 앞 단계의 예제는 upstream이라는 이름을 부여했다.
+>
+> 앞 단계에서 next-step 저장소에 이름을 부여했다면 이번 단계는 fetch 명령으로 동기화하고 싶은 next-step 저장소의 브랜치를 가져오기 해야 한다.
 
 ```
 git fetch upstream {본인_아이디}
 ex) git fetch upstream javajigi
 ```
 
-![codereview 10_11](codereview_10_11.png)
+fetch 명령을 실행한 후의 상태를 다음과 같다.
+![fetch upstream](./images/fetch_upstream.png)
 
-----
-12. next-step 저장소 브랜치와 동기화하기
+> fetch 명령을 실행한 후 `git branch -a` 명령을 실행하면 remotes/upstream/javajigi와 같은 브랜치가 생성된 것을 확인할 숭 ㅣㅆ다.
+
+---
+4. next-step 저장소 브랜치와 동기화하기
+> 현재 상태는 next-step 저장소 브랜치를 가져오기는 했지만 아직까지 로컬 저장소에 최신 버전의 코드가 반영된 것은 아니다.
+>
+> rebase 명령을 실행해 next-step 저장소와 로컬 저장소의 브랜치를 동기화한다.
+
 ```
 git rebase upstream/본인_아이디
 ex) git rebase upstream/javajigi
 ```
 
-![codereview 12](codereview_12.png)
+rebase 명령을 실행한 후의 상태는 다음과 같다.
+![rebase upstream](./images/rebase_upstream.png)
 
-----
-13. 코드리뷰 1단계의 4에서 다시 시작
+---
+5. 새로운 미션을 진행하기 위한 브랜치 생성
+> 지금까지 과정을 통해 새로운 작업을 시작하기 위한 준비 작업을 마쳤다.
+>
+> 다음 단계는 [코드리뷰 요청 1단계](./review-step1.md)의 4번 항목의 checkout 명령으로 새로운 브랜치를 생성한다.
 
-![codereview 13](codereview_13.png)
+```
+git checkout -b 브랜치이름
+ex) git checkout -b step2
+```
+
+checkout 명령으로 새로운 브랜치를 생성한 후의 상태는 다음과 같다.
+![checkout step2](./images/checkout_step2.png)
+
+> 다음 단계를 진행하기 위한 모든 준비 작업은 마쳤다.
+>
+> 지금부터 다음 단계에 도전하면 된다. 다음 단계의 도전이 끝나면 [코드리뷰 요청 1단계](./review-step1.md)의 7번 이후의 add, commit, push를 진행하고, 다시 pull request를 보내면 된다.
+>
+> 온라인 코드리뷰를 통해 프로그래밍을 즐기는 개발자가 되기를 기대해 본다.
