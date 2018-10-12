@@ -10,9 +10,17 @@
 ```
 ex) 미션을 진행한 javajigi/java-racingcar step1 브랜치 => next-step/java-racingcar javajigi 브랜치로 pull request를 보낸다.
 ```
-![pull request 보내기](./images/pull_request_1.png)
 
-![pull request 브랜치 변경](./images/pull_request_2.png)
+* 브라우저에서 github 저장소에 접근한다.
+* 브랜치를 작업 브랜치로 변경한다(앞 단계의 예에서는 step1).
+* 브랜치 오른쪽에 있는 "New pull request" 버튼을 클릭한다.
+
+![pull request 보내기](./images/etc/pull_request_1.png)
+
+* 왼쪽 next-step 저장소의 브랜치를 자신의 github 계정 브랜치로 변경한다.
+* 현재 미션에서 작업한 내용을 입력하고 "Create pull request" 버튼을 클릭해 pull request를 보낸다.
+
+![pull request 브랜치 변경](./images/etc/pull_request_2.png)
 
 pull request를 보냈을 때의 상태는 다음과 같다.
 ![pull request](./images/pull_request.png)
@@ -52,3 +60,5 @@ ex) git push origin step1
 
 pull request가 승인이 되어 통합이 된 후의 상태는 다음과 같다.
 ![approve pr](./images/approve_pr.png)
+
+## 2단계를 모두 완료하면 [코드리뷰 요청 3단계](./review-step3.md) 를 진행한다.

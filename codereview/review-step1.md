@@ -4,14 +4,19 @@
 ---
 1. 저장소 브랜치에 자신의 github 아이디에 해당하는 브랜치가 있는지 확인한다. 브랜치가 없는 경우 강사에게 브랜치 생성을 요청한다.
 
+자신의 브랜치가 존재하는지 확인하는 방법은 다음과 같다.
+![branches](./images/etc/no_branch_github.png)
+
 브랜치를 생성하기 전 상태는 다음과 같다.
 ![no branch](./images/no_branch.png)
 
-자신의 브랜치가 존재하는지 확인하는 방법은 다음과 같다.
-![branches](./images/branches.png)
+자신의 github 계정 브랜치가 생성되어 있으면 다음과 같이 검색이 되어야 한다.
+![no branch](./images/etc/branch_github.png)
 
 브랜치를 생성한 후 상태는 다음과 같다.
 ![create branch](./images/create_branch.png)
+
+
 
 ---
 2. 프로젝트를 자신의 계정으로 fork한다. 저장소 우측 상단의 fork 버튼을 활용한다.
@@ -20,7 +25,7 @@
 > fork는 next-step의 저장소를 자신의 계정으로 복사하는 기능이다. 앞으로 모든 미션은 자신의 계정 아래에 있는 저장소를 활용해 진행한다.
 
 fork는 next-step 저장소 우측 상단의 fork 버튼을 활용한다.
-![fork](./images/fork.png)
+![fork](./images/etc/fork.png)
 
 fork를 완료한 후의 상태는 다음과 같다.
 ![fork my repo](./images/fork_my_repo.png)
@@ -66,13 +71,21 @@ ex) git checkout -b step1
 5. 통합개발도구(Eclipse 또는 IntelliJ)로 가져오기(import)
 > 미션 진행을 위해 자신이 사용하고 있는 통합개발도구로 가져오기 한다. 이 문서는 IntelliJ를 기준으로 한다.
 
-![import1](./images/import1.png)
+* IntelliJ를 시작
+* 다음 화면에서 Import Project
 
-![import2](./images/import2.png)
+![import1](./images/etc/import1.png)
+
+* 앞에서 clone한 폴더를 선택한다.
+* 다음 화면과 같이 "Import Project from external model" 선택 -> Gradle을 선택 -> Next
+
+![import2](./images/etc/import2.png)
+
+* 다음 화면에서 Finish 버튼을 클릭해 가져오기를 완료한다.
 
 ---
 6. 기능 구현
-> [edu.nextstep.camp](https://edu.nextstep.camp)에서 미션 요구사항을 파악해 기능을 구현한다.
+> [edu.nextstep.camp](https://edu.nextstep.camp) 에서 미션 요구사항을 파악해 기능을 구현한다.
 
 ---
 7. 기능 구현 후 add, commit
@@ -98,3 +111,5 @@ ex) git push origin step1
 
 push 명령을 실행한 후의 상태는 다음과 같다.
 ![push1](./images/push1.png)
+
+## 1단계를 모두 완료하면 [코드리뷰 요청 2단계](./review-step2.md) 를 진행한다.
