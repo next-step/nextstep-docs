@@ -29,6 +29,7 @@ ex) git remote add upstream https://github.com/next-step/java-racingcar.git
 // 위와 같이 next-step 저장소를 추가한 후 전체 remote 저장소 목록을 본다.
 git remote -v
 ```
+* **git remote add** 명령은 최초 1회만 진행하면 된다.
 
 ![add upstream](./images/add_upstream.png)
 
@@ -46,7 +47,7 @@ ex) git fetch upstream javajigi
 fetch 명령을 실행한 후의 상태를 다음과 같다.
 ![fetch upstream](./images/fetch_upstream.png)
 
-> fetch 명령을 실행한 후 `git branch -a` 명령을 실행하면 remotes/upstream/javajigi와 같은 브랜치가 생성된 것을 확인할 숭 ㅣㅆ다.
+> fetch 명령을 실행한 후 `git branch -a` 명령을 실행하면 remotes/upstream/javajigi와 같은 브랜치가 생성된 것을 확인할 수 있다.
 
 ---
 4. next-step 저장소 브랜치와 동기화하기
