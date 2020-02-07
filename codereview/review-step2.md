@@ -22,7 +22,8 @@ ex) 미션을 진행한 javajigi/java-racingcar step1 브랜치 => next-step/jav
 
 ![pull request 브랜치 변경](./images/etc/pull_request_2.png)
 
-pull request를 보냈을 때의 상태는 다음과 같다.
+* pull request를 보냈을 때의 상태는 다음과 같다.
+
 ![pull request](./images/pull_request.png)
 
 ---
@@ -54,17 +55,19 @@ git push origin 브랜치이름
 ex) git push origin step1
 ```
 
-새롭게 add, commit을 진행하는 경우 새로운 버전이 생성되어 상태는 다음과 같다.
+* 새롭게 add, commit을 진행하는 경우 새로운 버전이 생성되어 상태는 다음과 같다.
 
 ![add commit2](./images/add_commit_2.png)
 
-새로운 버전을 push한 상태는 다음과 같다.
+* 새로운 버전을 push한 상태는 다음과 같다.
+
 ![push2](./images/push2.png)
 
 ---
 5. 몇 번의 피드백을 주고 받은 후 승인이 되어 next-step 저장소에 통합(merge)이 된다면 [코드리뷰 요청 3단계](./review-step3.md)를 진행한다.
 
-pull request가 승인이 되어 통합이 된 후의 상태는 다음과 같다.
+* pull request가 승인이 되어 통합이 된 후의 상태는 다음과 같다.
+
 ![approve pr](./images/approve_pr.png)
 
 ## 2단계를 모두 완료하면 [코드리뷰 요청 3단계](./review-step3.md) 를 진행한다.

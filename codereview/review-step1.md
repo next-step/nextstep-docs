@@ -13,9 +13,11 @@
 ![my mission repository](./images/etc/my_mission_repository.png)
 
 * 자신의 github 계정 브랜치가 생성되어 있으면 다음과 같이 검색이 되어야 한다.
+
 ![no branch](./images/etc/branch_github.png)
 
 * 브랜치를 생성한 후 상태는 다음과 같다.
+
 ![create branch](./images/create_branch.png)
 
 ---
@@ -51,6 +53,7 @@ ex) cd java-racingcar
 ```
 
 * clone을 완료한 후의 상태는 다음과 같다.
+
 ![clone repository](./images/clone_repository.png)
 
 ---
@@ -67,6 +70,7 @@ ex) git checkout -b step1
 ```
 
 * 브랜치를 생성한 후의 상태는 다음과 같다.
+
 ![checkout step1](./images/checkout_step1.png)
 
 ---
@@ -99,7 +103,8 @@ git add -A(또는 .) // 변경된 전체 파일을 한번에 반영
 git commit -m "메시지" // 작업한 내용을 메시지에 기록
 ```
 
-기능 구현을 완료하고 add, commit 명령을 실행한 후의 상태는 다음과 같다.
+* 기능 구현을 완료하고 add, commit 명령을 실행한 후의 상태는 다음과 같다.
+
 ![add commit1](./images/add_commit_1.png)
 
 ---
@@ -112,6 +117,7 @@ ex) git push origin step1
 ```
 
 * push 명령을 실행한 후의 상태는 다음과 같다.
+
 ![push1](./images/push1.png)
 
 ## 1단계를 모두 완료하면 [코드리뷰 요청 2단계](./review-step2.md) 를 진행한다.

@@ -14,7 +14,8 @@ ex) git checkout javajigi
 ex) git branch -D step1
 ```
 
-checkout을 통해 브랜치를 변경한 후 작업 브랜치를 삭제한 후의 상태는 다음과 같다.
+* checkout을 통해 브랜치를 변경한 후 작업 브랜치를 삭제한 후의 상태는 다음과 같다.
+
 ![checkout delete](./images/checkout_delete.png)
 
 ---
@@ -44,7 +45,8 @@ git fetch upstream {본인_아이디}
 ex) git fetch upstream javajigi
 ```
 
-fetch 명령을 실행한 후의 상태를 다음과 같다.
+* fetch 명령을 실행한 후의 상태를 다음과 같다.
+
 ![fetch upstream](./images/fetch_upstream.png)
 
 > fetch 명령을 실행한 후 `git branch -a` 명령을 실행하면 remotes/upstream/javajigi와 같은 브랜치가 생성된 것을 확인할 수 있다.
@@ -60,7 +62,8 @@ git rebase upstream/본인_아이디
 ex) git rebase upstream/javajigi
 ```
 
-rebase 명령을 실행한 후의 상태는 다음과 같다.
+* rebase 명령을 실행한 후의 상태는 다음과 같다.
+
 ![rebase upstream](./images/rebase_upstream.png)
 
 ---
@@ -74,7 +77,8 @@ git checkout -b 브랜치이름
 ex) git checkout -b step2
 ```
 
-checkout 명령으로 새로운 브랜치를 생성한 후의 상태는 다음과 같다.
+* checkout 명령으로 새로운 브랜치를 생성한 후의 상태는 다음과 같다.
+
 ![checkout step2](./images/checkout_step2.png)
 
 > 다음 단계를 진행하기 위한 모든 준비 작업은 마쳤다.
