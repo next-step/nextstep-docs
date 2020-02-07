@@ -26,7 +26,13 @@ pull request를 보냈을 때의 상태는 다음과 같다.
 ![pull request](./images/pull_request.png)
 
 ---
-2. pull request를 보낸 후 강사에게 리뷰 요청을 한다.
+2. pull request를 보낸 후 리뷰어에게 리뷰 요청을 한다. 
+* NextStep(https://edu.nextstep.camp) 에 접속해 자신이 수강하고 있는 강의로 이동한다.
+* 우측 상단의 github 로고를 클릭하면 자신에게 배정된 리뷰어에게 리뷰 요청 알림이 간다.
+
+![리뷰어에게 리뷰 요청](./images/etc/request_review.png)
+
+* 리뷰 요청이 정상적으로 동작하면 리뷰어에게 slack으로 알림 요청이 간다.
 
 ---
 3. pull request에 대해 승인이 되지 않고 수정 요청 피드백을 받으면 피드백 받은 내용을 반영한다. 만약, pull request가 승인이 되어 next-step 저장소에 통합(merge)이 된다면 [코드리뷰 요청 3단계](./review-step3.md)를 진행한다.

@@ -1,22 +1,22 @@
 ## 온라인 코드리뷰 요청 1단계
-코드리뷰 1단계는 미션을 시작, 개발 환경을 구축, 1단계 미션 오나료, 1차 리뷰 요청을 보내는 단계까지의 과정을 다룬다.
+코드리뷰 1단계는 미션을 시작, 개발 환경을 구축, 1단계 미션 완료, 1차 리뷰 요청을 보내는 단계까지의 과정을 다룬다.
 
 ---
-1. 저장소 브랜치에 자신의 github 아이디에 해당하는 브랜치가 있는지 확인한다. 브랜치가 없는 경우 강사에게 브랜치 생성을 요청한다.
+1. 미션을 시작한다.
+* NextStep(https://edu.nextstep.camp) 에 접속해 진행하려는 미션으로 이동한다. **미션 시작** 버튼을 클릭한다.
 
-자신의 브랜치가 존재하는지 확인하는 방법은 다음과 같다.
-![branches](./images/etc/no_branch_github.png)
+![start mission](./images/etc/start_mission.png)
 
-브랜치를 생성하기 전 상태는 다음과 같다.
-![no branch](./images/no_branch.png)
+* 미션을 시작하는 순간 미션 저장소에 자신의 github id 계정에 해당하는 브랜치가 생성되고 리뷰어가 배정된다.
+* **나의 미션** 버튼을 클릭해 미션을 진행할 수 있는 저장소로 이동한다.
 
-자신의 github 계정 브랜치가 생성되어 있으면 다음과 같이 검색이 되어야 한다.
+![my mission repository](./images/etc/my_mission_repository.png)
+
+* 자신의 github 계정 브랜치가 생성되어 있으면 다음과 같이 검색이 되어야 한다.
 ![no branch](./images/etc/branch_github.png)
 
-브랜치를 생성한 후 상태는 다음과 같다.
+* 브랜치를 생성한 후 상태는 다음과 같다.
 ![create branch](./images/create_branch.png)
-
-
 
 ---
 2. 프로젝트를 자신의 계정으로 fork한다. 저장소 우측 상단의 fork 버튼을 활용한다.
@@ -24,10 +24,12 @@
 > 
 > fork는 next-step의 저장소를 자신의 계정으로 복사하는 기능이다. 앞으로 모든 미션은 자신의 계정 아래에 있는 저장소를 활용해 진행한다.
 
-fork는 next-step 저장소 우측 상단의 fork 버튼을 활용한다.
+* fork는 next-step 저장소 우측 상단의 fork 버튼을 활용한다.
+
 ![fork](./images/etc/fork.png)
 
-fork를 완료한 후의 상태는 다음과 같다.
+* fork를 완료한 후의 상태는 다음과 같다.
+
 ![fork my repo](./images/fork_my_repo.png)
 
 ---
@@ -36,7 +38,7 @@ fork를 완료한 후의 상태는 다음과 같다.
 >
 > clone 명령은 github.com에 존재하는 저장소를 자신의 노트북 또는 PC로 복사하는 과정이다.
 
-터미널에서 다음 명령을 입력한다.
+* 터미널에서 다음 명령을 입력한다.
 
 ```
 git clone -b {본인_아이디} --single-branch https://github.com/{본인_아이디}/{저장소 아이디}
@@ -48,7 +50,7 @@ cd {저장소 아이디}
 ex) cd java-racingcar
 ```
 
-clone을 완료한 후의 상태는 다음과 같다.
+* clone을 완료한 후의 상태는 다음과 같다.
 ![clone repository](./images/clone_repository.png)
 
 ---
@@ -57,14 +59,14 @@ clone을 완료한 후의 상태는 다음과 같다.
 >
 > 브랜치를 생성하는 이유는 실무에서 프로젝트를 진행할 때와 같은 방법으로 기능을 구현하고, 리뷰하는 경험을 전달하기 위함이다.
 
-터미널에서 다음 명령을 입력해 브랜치를 생성한다.
+* 터미널에서 다음 명령을 입력해 브랜치를 생성한다.
 
 ```
 git checkout -b 브랜치이름
 ex) git checkout -b step1
 ```
 
-브랜치를 생성한 후의 상태는 다음과 같다.
+* 브랜치를 생성한 후의 상태는 다음과 같다.
 ![checkout step1](./images/checkout_step1.png)
 
 ---
@@ -109,7 +111,7 @@ git push origin 브랜치이름
 ex) git push origin step1
 ```
 
-push 명령을 실행한 후의 상태는 다음과 같다.
+* push 명령을 실행한 후의 상태는 다음과 같다.
 ![push1](./images/push1.png)
 
 ## 1단계를 모두 완료하면 [코드리뷰 요청 2단계](./review-step2.md) 를 진행한다.
