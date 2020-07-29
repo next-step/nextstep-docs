@@ -101,4 +101,4 @@ ex) git checkout -b step2
 * `git checkout 기능_브랜치`(예: git checkout step2)
 * `git merge 본인_아이디`(예: git merge javajigi)
 
-위 명령을 실행하면 충돌이 발생할 것이다. 충동을 해결한 후 add, commit, push를 진행하면 PR 충돌이 해결되어 리뷰 요청을 할 수 있다.
+위 명령을 실행하면 충돌이 발생할 것이다. 충돌을 해결한 후 add, commit, push를 진행하면 PR 충돌이 해결되어 리뷰 요청을 할 수 있다.
