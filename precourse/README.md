@@ -10,7 +10,7 @@
 ![fork](./images/fork.png)
 
 fork를 완료한 후의 저장소 상태는 다음과 같다.
-![fork my repo](./images/fork_my_repo.jpg)
+![fork my repo](./images/fork_my_repo.png)
 
 ---
 2. fork한 저장소를 자신의 컴퓨터로 clone한 후 폴더로 이동한다.
@@ -32,7 +32,7 @@ ex) cd java-baseball
 ```
 
 clone을 완료한 후의 저장소 상태는 다음과 같다.
-![clone repository](./images/clone_repository.jpg)
+![clone repository](./images/clone_repository.png)
 
 ---
 3. 기능 구현을 위한 브랜치 생성
@@ -46,7 +46,7 @@ ex) git checkout -b javajigi
 ```
 
 브랜치를 생성한 후의 상태는 다음과 같다.
-![checkout javajigi](./images/checkout_javajigi.jpg)
+![checkout javajigi](./images/checkout_javajigi.png)
 
 ---
 4. 통합개발도구(Eclipse 또는 IntelliJ)로 가져오기(import)
@@ -79,7 +79,7 @@ git commit -m "메시지" // 작업한 내용을 메시지에 기록
 ```
 
 기능 구현을 완료하고 add, commit 명령을 실행한 후의 상태는 다음과 같다.
-![add commit1](./images/add_commit.jpg)
+![add commit1](./images/add_commit.png)
 
 ---
 7. 본인 원격 저장소에 올리기
@@ -91,7 +91,7 @@ ex) git push origin javajigi
 ```
 
 push 명령을 실행한 후의 상태는 다음과 같다.
-![push1](./images/push.jpg)
+![push1](./images/push.png)
 
 ---
 8. github 서비스에서 pull request를 보낸다.
@@ -114,7 +114,7 @@ ex) 미션을 진행한 javajigi/java-baseball javajigi 브랜치 => next-step/j
 ![pull request 브랜치 변경](./images/pull_request_2.png)
 
 pull request를 보냈을 때의 상태는 다음과 같다.
-![pull request](./images/pull_request.jpg)
+![pull request](./images/pull_request.png)
 
 ---
 9. 이메일 보내 과제 최종 제출하기
