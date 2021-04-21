@@ -58,7 +58,7 @@ gitignore 대상 추가:
 - java, gradle, windows, macos, linux, jetbrain
 ```
 
-#### test() : junit5, assertj 학습 - 1
+#### test(StringClassTest) : junit5, assertj 학습 - 1
 
 ```
 junit5, assertj에 대한 학습을 위해 다음과 같은 테스트를 추가한다.
