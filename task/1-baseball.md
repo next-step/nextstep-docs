@@ -44,7 +44,7 @@
 - task/1-baseball.md : 숫자 야구 게임에 대한 수행 과정 및 기능 목록을 설명한다.
 ```
 
-#### chore() : 프로젝트 초기화 작업
+#### chore(gradle, buildSrc, 1-baseball, .gitignore) : 프로젝트 초기화 작업
 
 ```
 프로젝트를 수행하기 위한 작업들을 진행한다.
