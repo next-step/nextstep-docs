@@ -57,3 +57,16 @@
 gitignore 대상 추가:
 - java, gradle, windows, macos, linux, jetbrain
 ```
+
+#### test() : junit5, assertj 학습 - 1
+
+```
+junit5, assertj에 대한 학습을 위해 다음과 같은 테스트를 추가한다.
+
+String 클래스 테스트
+- "1,2"를 split 했을 때, 1과 2로 분리되는지 테스트
+- "1"를 split 했을 때, 1만 포함하는 배열이 되는지 테스트
+- "(1,2)" 값이 주어졌을 때, substring을 활용하여 "1,2"를 반환하도록 테스트
+- "abc" 값이 주어졌을 때, charAt() 메소드를 활용하여 특정 위치의 문자를 가져오도록 테스트
+- charAt() 메소드를 활용하여 StringIndexOutOfBoundsException이 발생하도록 테스트
+```
