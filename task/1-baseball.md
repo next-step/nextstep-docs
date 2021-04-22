@@ -71,7 +71,7 @@ String 클래스 테스트
 - charAt() 메소드를 활용하여 StringIndexOutOfBoundsException이 발생하도록 테스트
 ```
 
-#### test() : junit5, assertj 학습 - 2
+#### test(SetCollectionTest) : junit5, assertj 학습 - 2
 
 ```
 junit5, assertj에 대한 학습을 위해 다음과 같은 테스트를 추가한다.
@@ -80,4 +80,5 @@ Set 콜렉션 테스트
 - Set의 size() 메소드를 통해 set의 크기를 확인하는 테스트
 - Set의 contains() 메소드를 통해 1, 2, 3의 값이 존재하는지 확인하는 테스트
 - Set의 contains() 메소드가 false를 나오는게 하는 테스트
+- @Parameterized를 활용한 테스트를 진행한다.
 ```
