@@ -1,1 +1,3 @@
 .DS_Store
+/.classpath
+/bin/*.class
