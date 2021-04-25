@@ -12,6 +12,7 @@ public class Main {
 			answer = generate(temp);
 			guide();
 			String input = sc.next();
+			System.out.println();
 			int[] ret = calculate(input, answer);
 			flag = guide(ret);
 			guide(flag);
@@ -42,6 +43,12 @@ public class Main {
 
 		sc.close();
 
+	}
+
+
+
+	private static void guide() {
+		System.out.print("숫자를 입력해주세요 : ");
 	}
 
 	private static String generate(String answer) {
