@@ -1,8 +1,8 @@
 # NEXTSTEP 리뷰 진행 과정 및 리뷰어 가이드
 
 ---
-NEXTSTEP의 리뷰 진행 과정 및 리뷰어 가이드 전체 과정을 볼 수 있다.
-**[NEXTSTEP 리뷰 진행 과정 및 리뷰어 가이드 동영상](https://vimeo.com/414995264/7299672b47)을 먼저 볼 것을 추천**
+NEXTSTEP의 리뷰 진행 과정 및 리뷰어 가이드 전체 과정을 볼 수 있기 때문에 다음 동영상을 먼저 볼 것을 추천한다.
+[![nextstep reviewer guide](https://i.vimeocdn.com/video/888298524.webp?mw=1900&mh=1070)](https://vimeo.com/414995264/7299672b47)
 
 ---
 #### 리뷰 진행 프로세스
