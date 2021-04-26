@@ -53,6 +53,9 @@ public class Main {
 		if (ret[1] > 0) {
 			line += ret[1] + " 볼";
 		}
+		if(ret[0] == 0 && ret[1] == 0) {
+			line += "낫싱";
+		}
 		System.out.println(line);
 
 		if (ret[0] == 3) {
