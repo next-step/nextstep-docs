@@ -120,11 +120,11 @@ public class Main {
 	}
 
 	private static String generateNewAnswer() {
-		String answer = "";
+		String ret = "";
 		int temp = (int) (Math.random() * 999 + 1);
-		answer = temp + "";
-		if (temp >= 100 && temp <= 999 && isSafe(answer)) {
-			return answer;
+		ret = temp + "";
+		if (temp >= 100 && temp <= 999 && isSafe(ret)) {
+			return ret;
 		}
 		return generateNewAnswer();
 	}
