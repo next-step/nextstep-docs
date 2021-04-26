@@ -32,14 +32,11 @@ public class Main {
 	}
 
 	private static String initAnswer(int flag, String answer) {
-		if (flag == 0) {
+		if (flag == 0 || flag == 2) {
 			return answer;
 		}
 		if (flag == 1) {
 			return "111";
-		}
-		if (flag == 2) {
-			return answer;
 		}
 		return answer;
 	}
