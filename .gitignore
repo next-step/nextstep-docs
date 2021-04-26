@@ -1,3 +1,4 @@
 .DS_Store
 /.classpath
 /bin/*.class
+/bin/test/*.class
