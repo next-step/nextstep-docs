@@ -4,22 +4,31 @@ public class Main {
 
 	private static Scanner sc = new Scanner(System.in);
 
+	// flag 0 게임을 계속 해야 하는 상태
+	// flag 1 게임을 끝냈지만 정답을 맞추었는데 1을 누른 상태
+	// flag 2 게임을 끝냈지만 정답을 맞추었는데 2를 누른 상태
 	public static void main(String[] args) throws Exception {
 		String answer = "111";
-		// flag 0 게임을 계속 해야 하는 상태
-		// flag 1 게임을 끝냈지만 정답을 맞추었는데 1을 누른 상태
-		// flag 2 게임을 끝냈지만 정답을 맞추었는데 2를 누른 상태
 		int flag = 0;
+		gamePlay(answer, flag);
+		sc.close();
+	}
+
+	/**
+	 * 게임 플레이
+	 * 
+	 * @param answer
+	 * @param flag
+	 */
+	private static void gamePlay(String answer, int flag) {
 		while (flag != 2) {
-			String temp = new String(answer);
-			answer = generateAnswer(temp);
+			answer = generateAnswer(new String(answer));
 			guide();
 			String input = sc.next();
 			int[] ret = calculate(input, answer);
 			flag = guide(ret);
 			answer = initAnswer(flag, answer);
 		}
-		sc.close();
 	}
 
 	private static String initAnswer(int flag, String answer) {
@@ -39,7 +48,7 @@ public class Main {
 
 		String line = "";
 		if (ret[0] > 0) {
-			line += ret[0] + " 스트라이크";
+			line += ret[0] + " 스트라이크 ";
 		}
 		if (ret[1] > 0) {
 			line += ret[1] + " 볼";
@@ -115,6 +124,9 @@ public class Main {
 				continue;
 			}
 			answer = temp + "";
+			if (answer.charAt(0) == '0' || answer.charAt(1) == '1' || answer.charAt(2) == 2) {
+				continue;
+			}
 			if (answer.length() == 3 && answer.charAt(0) != answer.charAt(1) && answer.charAt(1) != answer.charAt(2) && answer.charAt(0) != answer.charAt(2)) {
 				break;
 			}
