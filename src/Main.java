@@ -6,8 +6,11 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		String answer = "111";
-		boolean flag = true;
-		while (flag) {
+		// flag 0 게임을 계속 해야 하는 상태
+		// flag 1 게임을 끝냈지만 정답을 맞추었는데 1을 누른 상태
+		// flag 2 게임을 끝냈지만 정답을 맞추었는데 2를 누른 상태
+		int flag = 0;
+		while (flag != 2) {
 			String temp = new String(answer);
 			answer = generateAnswer(temp);
 			guide();
@@ -19,15 +22,20 @@ public class Main {
 		sc.close();
 	}
 
-	private static String initAnswer(boolean flag, String answer) {
-		if (flag == false) {
-			return "111";
-		} else {
+	private static String initAnswer(int flag, String answer) {
+		if (flag == 0) {
 			return answer;
 		}
+		if (flag == 1) {
+			return "111";
+		}
+		if (flag == 2) {
+			return answer;
+		}
+		return answer;
 	}
 
-	private static boolean guide(int[] ret) {
+	private static int guide(int[] ret) {
 
 		String line = "";
 		if (ret[0] > 0) {
@@ -42,19 +50,11 @@ public class Main {
 			System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
 			System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
 			int flag = sc.nextInt();
-			return playNext(flag);
-		} else {
-			return true;
+			return flag;
 		}
+		// 쓰리 스트라이크가 아니면 게임을 계속 해야함
+		return 0;
 
-	}
-
-	private static boolean playNext(int flag) {
-		if(flag == 1) {
-			return false;
-		}else {
-			return true;			
-		}
 	}
 
 	/**
@@ -101,6 +101,10 @@ public class Main {
 		System.out.print("숫자를 입력해주세요 : ");
 	}
 
+	/*
+	 * 입력이 정상이면 정상을 그대로 리턴
+	 * 입력이 정상이 아니어도 정상을 리턴
+	 */
 	private static String generateAnswer(String answer) {
 		if (answer.length() == 3 && answer.charAt(0) != answer.charAt(1) && answer.charAt(1) != answer.charAt(2) && answer.charAt(0) != answer.charAt(2)) {
 			return answer;
