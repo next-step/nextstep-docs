@@ -1,20 +1,27 @@
+package app;
+
 import java.util.Scanner;
 
-public class Main {
+public class PlayStore {
+	private Scanner sc;
 
-	private static Scanner sc = new Scanner(System.in);
+	public PlayStore(Scanner sc) {
+		super();
+		this.sc = sc;
+	}
 
-	// flag 0 게임을 계속 해야 하는 상태
-	// flag 1 게임을 끝냈지만 정답을 맞추었는데 1을 누른 상태
-	// flag 2 게임을 끝냈지만 정답을 맞추었는데 2를 누른 상태
-	public static void main(String[] args) throws Exception {
+	public PlayStore() {
+		sc = new Scanner(System.in);
+	}
+
+	public void play() {
 		String answer = "111";
 		int flag = 0;
 		gamePlay(answer, flag);
 		sc.close();
 	}
 
-	private static void gamePlay(String answer, int flag) {
+	public void gamePlay(String answer, int flag) {
 		while (flag != 2) {
 			answer = generateAnswer(new String(answer));
 			guide();
@@ -25,11 +32,11 @@ public class Main {
 		}
 	}
 
-	private static void guide() {
+	public void guide() {
 		System.out.print("숫자를 입력해주세요 : ");
 	}
 
-	private static int guide(int[] input) {
+	public int guide(int[] input) {
 		String line = mentMaking(input);
 		System.out.println(line);
 		if (input[0] == 3) {
@@ -40,7 +47,7 @@ public class Main {
 		return 0;
 	}
 
-	private static String mentMaking(int[] input) {
+	public String mentMaking(int[] input) {
 		String ret = "";
 		ret = mentMakingStrike(input, ret);
 		ret = mentMakingBall(input, ret);
@@ -48,35 +55,35 @@ public class Main {
 		return ret;
 	}
 
-	private static String mentMakingStrike(int[] input, String ret) {
+	public String mentMakingStrike(int[] input, String ret) {
 		if (input[0] > 0) {
 			ret += input[0] + " 스트라이크 ";
 		}
 		return ret;
 	}
-	
-	private static String mentMakingBall(int[] input, String ret) {
+
+	public String mentMakingBall(int[] input, String ret) {
 		if (input[1] > 0) {
 			ret += input[1] + " 볼";
 		}
 		return ret;
 	}
 
-	private static String mentMakingNothing(int[] input, String ret) {
+	public String mentMakingNothing(int[] input, String ret) {
 		if (input[0] == 0 && input[1] == 0) {
 			ret += "낫싱";
 		}
 		return ret;
 	}
 
-	private static int[] calculate(String input, String answer) {
+	public int[] calculate(String input, String answer) {
 		int[] ret = new int[2];
 		ret[0] = calculateStrike(input, answer);
 		ret[1] = calculateBall(input, answer);
 		return ret;
 	}
 
-	private static int calculateBall(String input, String answer) {
+	public int calculateBall(String input, String answer) {
 		int ret = 0;
 		ret = calculateMatch(input.charAt(0), answer.charAt(1), ret);
 		ret = calculateMatch(input.charAt(0), answer.charAt(2), ret);
@@ -87,7 +94,7 @@ public class Main {
 		return ret;
 	}
 
-	private static int calculateStrike(String input, String answer) {
+	public int calculateStrike(String input, String answer) {
 		int ret = 0;
 		ret = calculateMatch(input.charAt(0), answer.charAt(0), ret);
 		ret = calculateMatch(input.charAt(1), answer.charAt(1), ret);
@@ -95,21 +102,21 @@ public class Main {
 		return ret;
 	}
 
-	private static int calculateMatch(char a, char b, int ret) {
+	public int calculateMatch(char a, char b, int ret) {
 		if (a == b) {
 			return ret + 1;
 		}
 		return ret;
 	}
 
-	private static String generateAnswer(String answer) {
+	public String generateAnswer(String answer) {
 		if (isSafe(answer)) {
 			return answer;
 		}
 		return generateNewAnswer();
 	}
 
-	private static boolean isSafe(String answer) {
+	public boolean isSafe(String answer) {
 		if (answer.charAt(0) == answer.charAt(1) || answer.charAt(1) == answer.charAt(2) || answer.charAt(0) == answer.charAt(2)) {
 			return false;
 		}
@@ -119,7 +126,7 @@ public class Main {
 		return true;
 	}
 
-	private static String generateNewAnswer() {
+	public String generateNewAnswer() {
 		String ret = "";
 		int temp = (int) (Math.random() * 999 + 1);
 		ret = temp + "";
@@ -129,7 +136,7 @@ public class Main {
 		return generateNewAnswer();
 	}
 
-	private static String initAnswer(int flag, String answer) {
+	public String initAnswer(int flag, String answer) {
 		if (flag == 0 || flag == 2) {
 			return answer;
 		}
@@ -138,5 +145,4 @@ public class Main {
 		}
 		return answer;
 	}
-
 }

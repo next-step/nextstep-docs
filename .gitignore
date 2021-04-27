@@ -2,3 +2,4 @@
 /.classpath
 /bin/*.class
 /bin/test/*.class
+/bin/app/*.class
