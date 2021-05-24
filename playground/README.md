@@ -22,7 +22,7 @@ fork를 완료한 후의 저장소 상태는 다음과 같다.
 
 ```
 git clone https://github.com/{본인_아이디}/{저장소 아이디}.git
-ex) git clone https://github.com/next-step/java-baseball.git
+ex) git clone https://github.com/javajigi/java-baseball.git
 ```
 
 ```
