@@ -22,21 +22,23 @@ fork를 완료한 후의 저장소 상태는 다음과 같다.
 
 ```
 git clone https://github.com/{본인_아이디}/{저장소 아이디}.git
-ex) git clone https://github.com/javajigi/java-baseball.git
+ex) git clone https://github.com/javajigi/java-baseball-playground.git
 ```
 
 ```
 // clone한 폴더로 이동하는 방법
 cd {저장소 아이디}
-ex) cd java-baseball
+ex) cd java-baseball-playground
 ```
 
 clone을 완료한 후의 저장소 상태는 다음과 같다.
 ![clone repository](./images/clone_repository.png)
 
 ---
-3. 기능 구현을 위한 브랜치 생성
+3. 미션 진행을 위한 브랜치 생성
 > git은 서로 다른 작업을 하기 위한 별도의 공간을 생성할 때 브랜치를 생성할 수 있다.
+>
+> 추후 피드백을 반영하기 위해 미션을 다시 시작하기 위해 새로운 브랜치를 생성해 미션 진행할 것을 추천한다.
 
 터미널에서 다음 명령을 입력해 브랜치를 생성한다.
 
@@ -53,16 +55,9 @@ ex) git checkout -b javajigi
 > 미션 진행을 위해 자신이 사용하고 있는 통합개발도구로 가져오기 한다. 이 문서는 IntelliJ를 기준으로 한다.
 
 * IntelliJ를 시작
-* 다음 화면에서 Import Project
+* 다음 화면에서 Open 버튼을 클릭해 앞에서 clone한 폴더를 선택해 프로젝트를 import한다.
 
-![import1](./images/import1.png)
-
-* 앞에서 clone한 폴더를 선택한다.
-* 다음 화면과 같이 "Import Project from external model" 선택 -> Gradle을 선택 -> Next
-
-![import2](./images/import2.png)
-
-* 다음 화면에서 Finish 버튼을 클릭해 가져오기를 완료한다.
+![import](./images/import.png)
 
 ---
 5. 기능 구현
