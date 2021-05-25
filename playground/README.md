@@ -102,12 +102,11 @@ push 명령을 실행한 후의 상태는 다음과 같다.
 2. 피드백 앞 단계까지 미션 구현을 완료한 후 피드백 강의를 학습한다.
 
 ---
-3. Git 브랜치를 master 또는 main으로 변경한 후 피드백을 반영하기 위한 새로운 브랜치를 생성한 후 처음부터 다시 미션 구현을 도전한다.
+3. Git 브랜치를 main으로 변경한 후 피드백을 반영하기 위한 새로운 브랜치를 생성한 후 처음부터 다시 미션 구현을 도전한다.
 
 ```
 git branch -a // 모든 로컬 브랜치 확인
-git checkout master // 기본 브랜치가 master인 경우
-git checkout main // 기본 브랜치가 main인 경우
+git checkout main
 
 git checkout -b 브랜치이름
 ex) git checkout -b apply-feedback
