@@ -7,10 +7,12 @@
 
 ---
 ## 차례
-* [의미 있는 이름](./class.md)
+* [네이밍, 의미 있는 이름](./class.md)
 * [클래스](./class.md)
+* [함수](./function.md)
 * [테스트](./test.md)
 * [상수](./constant.md)
+* [Enum, 열거타입](./enum.md)
 
 ---
 ## 피드백 참고 도서
