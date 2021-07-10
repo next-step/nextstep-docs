@@ -73,3 +73,8 @@ Car의 경우 생성자에 `Car(String name, int position)`을 가지는 생성�
 #### 리뷰어 한명당 담당하게 되는 수강생은 미션당 몇 명이 되나요?
 리뷰어들이 회사일과 병행하기 때문에 현재는 5명을 기본으로 하고 있어요.
 단, 리뷰어들의 요청에 따라 리뷰이의 수는 5명에서 가감될 수 있습니다.
+
+---
+## 🔗 참고 링크
+- [NEXTSTEP 리뷰어 분의 리뷰어 활동 후기- 회사 눈치 안 보고 투잡하기](https://woowabros.github.io/woowabros/2019/08/22/code-reviewer.html)
+- [카카오 신입사원 교육 리뷰어 분의 활동 후기 - 뉴크루 온보딩 코드 리뷰어로 참여하기](https://tech.kakao.com/2021/04/08/welcome-new-krew3)
