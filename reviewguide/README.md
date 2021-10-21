@@ -2,7 +2,7 @@
 
 ---
 **NEXTSTEP의 리뷰 진행 과정 및 리뷰어 가이드 전체 과정을 볼 수 있기 때문에 다음 동영상을 먼저 볼 것을 추천**
-[![nextstep reviewer guide](https://i.vimeocdn.com/video/888298524.webp?mw=1900&mh=1070)](https://vimeo.com/414995264/7299672b47)
+[![nextstep reviewer guide](https://i.vimeocdn.com/video/888298524-46d5488b36c5da6b3e205b316413936594466e95ee39f799950400aed7ace081-d?mw=1900&mh=1069)](https://vimeo.com/414995264/7299672b47)
 
 ---
 #### 리뷰 진행 프로세스
