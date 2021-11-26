@@ -17,7 +17,7 @@
 * 2주차: [JPA](./qna.md)
 * 3주차: [인수테스트](./acceptance-test.md)
 * 4주차: [그럴듯한 서비스 만들기](./subway-deploy.md)
-* 5주차: [ATDD 내에서 TDD](./subway-path.md)
+* 5주차: [ATDD 내에서 TDD](./atdd-tdd.md)
 * 6주차: [서비스 진단하기](./monitoring.md)
 * 7주차: [레거시 코드 리팩터링](./legacy-code-refactoring.md)
 * 8주차: [안정적인 서비스 만들기](./performance-refactoring.md)
