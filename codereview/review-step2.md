@@ -29,7 +29,7 @@ ex) 미션을 진행한 javajigi/java-racingcar step1 브랜치 => next-step/jav
 ---
 2. pull request를 보낸 후 리뷰어에게 리뷰 요청을 한다. 
 * NextStep(https://edu.nextstep.camp) 에 접속해 자신이 수강하고 있는 강의로 이동한다.
-* 우측 상단의 github 로고를 클릭하면 자신에게 배정된 리뷰어에게 리뷰 요청 알림이 간다.
+* 우측 상단의 `리뷰 요청` 클릭하면 자신에게 배정된 리뷰어에게 리뷰 요청 알림이 간다.
 
 ![리뷰어에게 리뷰 요청](./images/etc/request_review.png)
 
