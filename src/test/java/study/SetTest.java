@@ -38,7 +38,7 @@ public class SetTest {
         System.out.println(numbers);
         assertThat(numbers.contains(element)).isTrue();
     }
-
+//
     @ParameterizedTest
     @CsvSource(value = {"1:true", "2:true", "3:true", "4:false", "5:false"}, delimiter = ':')
     void toLowerCase_ShouldGenerateTheExpectedLowercaseValue(int input,String expected) {
