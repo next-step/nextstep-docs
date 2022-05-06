@@ -54,8 +54,8 @@ ex) git checkout -b javajigi
 4. 통합개발도구(Eclipse 또는 IntelliJ)로 가져오기(import)
 > 미션 진행을 위해 자신이 사용하고 있는 통합개발도구로 가져오기 한다. 이 문서는 IntelliJ를 기준으로 한다.
 
-* IntelliJ를 시작
-* 다음 화면에서 Open 버튼을 클릭해 앞에서 clone한 폴더를 선택해 프로젝트를 import한다.
+- IntelliJ를 시작
+- 다음 화면에서 Open 버튼을 클릭해 앞에서 clone한 폴더를 선택해 프로젝트를 import한다.
 
 ![import](./images/import.png)
 
