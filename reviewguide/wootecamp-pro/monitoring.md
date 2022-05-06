@@ -11,9 +11,9 @@
 - 시나리오를 작성하고 올바르게 Smoke Test를 진행했는지
 
 - 부하테스트 목표값(rps)에 맞춰 VUser 값을 적절히 도출하고 부하테스트를 진행했는지
-    - 응답시간은 latency * 2 입니다.
-    - 별도의 지연시간(a) 를 염두하지 않는다면, VUser Iteration (T) = 시나리오 내 요청 수 (R) * 응답시간 (http_req_duration) 입니다.
-    - 따라서, VUser = (목표 rps * T) / R = 목표 rps * http_req_duration 입니다.
+    - 응답시간은 latency - 2 입니다.
+    - 별도의 지연시간(a) 를 염두하지 않는다면, VUser Iteration (T) = 시나리오 내 요청 수 (R) - 응답시간 (http_req_duration) 입니다.
+    - 따라서, VUser = (목표 rps - T) / R = 목표 rps - http_req_duration 입니다.
     - 목표 rps 와 VUser 는 동일한 값이 아닙니다.
 
 - Stress Test를 통해 현재 인프라의 한계치를 확인했는지

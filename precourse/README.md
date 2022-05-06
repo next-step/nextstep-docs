@@ -52,17 +52,17 @@ ex) git checkout -b javajigi
 4. 통합개발도구(Eclipse 또는 IntelliJ)로 가져오기(import)
 > 미션 진행을 위해 자신이 사용하고 있는 통합개발도구로 가져오기 한다. 이 문서는 IntelliJ를 기준으로 한다.
 
-* IntelliJ를 시작
-* 다음 화면에서 Import Project
+- IntelliJ를 시작
+- 다음 화면에서 Import Project
 
 ![import1](./images/import1.png)
 
-* 앞에서 clone한 폴더를 선택한다.
-* 다음 화면과 같이 "Import Project from external model" 선택 -> Gradle을 선택 -> Next
+- 앞에서 clone한 폴더를 선택한다.
+- 다음 화면과 같이 "Import Project from external model" 선택 -> Gradle을 선택 -> Next
 
 ![import2](./images/import2.png)
 
-* 다음 화면에서 Finish 버튼을 클릭해 가져오기를 완료한다.
+- 다음 화면에서 Finish 버튼을 클릭해 가져오기를 완료한다.
 
 ---
 5. 기능 구현
@@ -103,13 +103,13 @@ push 명령을 실행한 후의 상태는 다음과 같다.
 ex) 미션을 진행한 javajigi/java-baseball javajigi 브랜치 => next-step/java-baseball master 브랜치로 pull request를 보낸다.
 ```
 
-* 브라우저에서 github 저장소에 접근한다.
-* 브랜치를 작업 브랜치로 변경한다(앞 단계의 예에서는 javajigi).
-* 브랜치 오른쪽에 있는 "New pull request" 버튼을 클릭한다.
+- 브라우저에서 github 저장소에 접근한다.
+- 브랜치를 작업 브랜치로 변경한다(앞 단계의 예에서는 javajigi).
+- 브랜치 오른쪽에 있는 "New pull request" 버튼을 클릭한다.
 
 ![pull request 보내기](./images/pull_request_1.png)
 
-* 현재 미션에서 작업한 내용을 입력하고 "Create pull request" 버튼을 클릭해 pull request를 보낸다.
+- 현재 미션에서 작업한 내용을 입력하고 "Create pull request" 버튼을 클릭해 pull request를 보낸다.
 
 ![pull request 브랜치 변경](./images/pull_request_2.png)
 

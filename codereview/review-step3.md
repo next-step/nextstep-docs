@@ -14,7 +14,7 @@ ex) git checkout javajigi
 ex) git branch -D step1
 ```
 
-* checkout을 통해 브랜치를 변경한 후 작업 브랜치를 삭제한 후의 상태는 다음과 같다.
+- checkout을 통해 브랜치를 변경한 후 작업 브랜치를 삭제한 후의 상태는 다음과 같다.
 
 ![checkout delete](./images/checkout_delete.png)
 
@@ -30,7 +30,7 @@ ex) git remote add upstream https://github.com/next-step/java-racingcar.git
 // 위와 같이 next-step 저장소를 추가한 후 전체 remote 저장소 목록을 본다.
 git remote -v
 ```
-* **git remote add** 명령은 최초 1회만 진행하면 된다.
+- **git remote add*- 명령은 최초 1회만 진행하면 된다.
 
 ![add upstream](./images/add_upstream.png)
 
@@ -45,7 +45,7 @@ git fetch upstream {본인_아이디}
 ex) git fetch upstream javajigi
 ```
 
-* fetch 명령을 실행한 후의 상태를 다음과 같다.
+- fetch 명령을 실행한 후의 상태를 다음과 같다.
 
 ![fetch upstream](./images/fetch_upstream.png)
 
@@ -62,7 +62,7 @@ git rebase upstream/본인_아이디
 ex) git rebase upstream/javajigi
 ```
 
-* rebase 명령을 실행한 후의 상태는 다음과 같다.
+- rebase 명령을 실행한 후의 상태는 다음과 같다.
 
 ![rebase upstream](./images/rebase_upstream.png)
 
@@ -77,7 +77,7 @@ git checkout -b 브랜치이름
 ex) git checkout -b step2
 ```
 
-* checkout 명령으로 새로운 브랜치를 생성한 후의 상태는 다음과 같다.
+- checkout 명령으로 새로운 브랜치를 생성한 후의 상태는 다음과 같다.
 
 ![checkout step2](./images/checkout_step2.png)
 
@@ -96,9 +96,9 @@ ex) git checkout -b step2
 >
 > 충돌을 해결하려면 어떻게 해야 하나요?
 
-* `git checkout 본인_아이디`(예: git checkout javajigi) 명령을 실행해 계정 브랜치로 이동한다.
-* `git reset --hard upstream/본인_아이디`(예: git reset --hard upstream/javajigi)
-* `git checkout 기능_브랜치`(예: git checkout step2)
-* `git merge 본인_아이디`(예: git merge javajigi)
+- `git checkout 본인_아이디`(예: git checkout javajigi) 명령을 실행해 계정 브랜치로 이동한다.
+- `git reset --hard upstream/본인_아이디`(예: git reset --hard upstream/javajigi)
+- `git checkout 기능_브랜치`(예: git checkout step2)
+- `git merge 본인_아이디`(예: git merge javajigi)
 
 위 명령을 실행하면 충돌이 발생할 것이다. 충돌을 해결한 후 add, commit, push를 진행하면 PR 충돌이 해결되어 리뷰 요청을 할 수 있다.
