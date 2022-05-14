@@ -15,7 +15,7 @@
 ## 미션별 리뷰어 가이드
 - 1주차: [TDD, 클래스 분리 - 로또](./lotto.md)
 - 2주차: [JPA](./qna.md)
-- 3주차: [인수테스트](./acceptance-test.md)
+- 3주차: [인수테스트 주도 개발](./acceptance-test.md)
 - 4주차: [그럴듯한 서비스 만들기](./subway-deploy.md)
 - 5주차: [ATDD 내에서 TDD](./atdd-tdd.md)
 - 6주차: [서비스 진단하기](./monitoring.md)
