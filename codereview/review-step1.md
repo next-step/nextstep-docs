@@ -52,6 +52,13 @@ cd {저장소 아이디}
 ex) cd java-racingcar
 ```
 
+- 만약 fork시 아래의 체크박스를 선택했다면 main 브랜치만 받아오게 된다. 이 경우, fork 후 깃헙 저장소에서 본인 아이디로 branch를 생성해준다.
+
+![check main branch](./images/etc/fork_main_check.png)
+
+![create branch](./images/etc/create_branch.png)
+
+
 - clone을 완료한 후의 상태는 다음과 같다.
 
 ![clone repository](./images/clone_repository.png)
