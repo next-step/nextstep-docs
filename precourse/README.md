@@ -115,29 +115,3 @@ ex) 미션을 진행한 javajigi/java-baseball javajigi 브랜치 => next-step/j
 
 pull request를 보냈을 때의 상태는 다음과 같다.
 ![pull request](./images/pull_request.png)
-
----
-9. 프리코스 과제 제출하기
---- 
-<br/>
-
-## 제출 가이드
-이전 단계의 가이드에 따라 Pull Request를 보냈다면,  
-[우아한테크캠프 Pro 지원 플랫폼](https://apply.techcourse.co.kr)에 접속하여 프리코스 과제를 제출한다.  
-**Pull Request만 보내고, 지원 플랫폼에서 과제를 제출하지 않으면 최종 제출하지 않은 것으로 처리되니 주의해 주세요.**    
-
-### 1. [우아한테크캠프 Pro 지원 플랫폼](https://apply.techcourse.co.kr) > 내 지원 현황
-지원 플랫폼에 로그인한 뒤, 내 지원 현황 페이지에 접속한다.  
-내가 지원한 과정(ex. 우아한테크캠프 Pro 5기)에 프리코스 과제가 생긴 것을 확인하실 수 있다.
-
-![내 지원 현황 페이지](./images/precourse_apply_01.jpeg) 
-
----
-### 2. 프리코스 과제 제출
-GitHub ID, Pull Request 주소, 과제 진행 소감을 모두 입력하고 제출해 주세요.      
-과제 진행 소감에는 미션을 진행하면서 느끼고 배운 점, 많은 시간을 투자한 부분 등도 포함하면 더 좋을 것 같습니다. 🙂
-- 한 번 제출한 뒤에도 해당 주차의 프리코스 기한 내에는 수정하실 수 있습니다.
-- GitHub ID에는 아래 이미지를 참고해 GitHub username을 확인하여 입력해 주세요.    
-
-![github id 안내](./images/precourse_apply_02.jpeg)
-
