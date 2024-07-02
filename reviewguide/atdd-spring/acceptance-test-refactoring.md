@@ -1,4 +1,4 @@
-## 0단계: Cucumber 전환
+## 0단계: Cucumber 전환
 
 - 기존 인수 테스트 중 일부를 Cucumber로 전환했는지 확인
 - DataTable을 이용하여 여러 값을 동시에 검증할 수 있는지?
